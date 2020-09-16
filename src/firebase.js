@@ -32,7 +32,7 @@ export const signOut = () => {
 export const firestore = firebase.firestore();
 window.firestore = firestore;
 
-export const createOrGetUserProfile = async (user, additionalData) => {
+export const createOrGetUserProfileDocument = async (user, additionalData) => {
   if (!user) return;
 
   const userRef = firestore.doc(`users/${user.uid}`);
