@@ -10,11 +10,11 @@ export default class Sidebar extends Component {
         <div className='user-profile'>
           <div className='avatar'>
             <img
-              src='https://www.flaticon.com/svg/static/icons/svg/2919/2919600.svg'
+              src='https://lh3.googleusercontent.com/a-/AOh14GjbGVp7R1pYuBHFZu3COLb_NC3WIFS0uPFVG7GqhA'
               alt='img'
             />
           </div>
-          <div>Ronald</div>
+          <div>Abhimanyu</div>
           <div
             style={{ marginLeft: 10, marginTop: 2, cursor: "pointer" }}
             onClick={signOut}>

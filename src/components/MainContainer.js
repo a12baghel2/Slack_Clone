@@ -69,7 +69,7 @@ function MainContainer(props) {
           <div className='message' key={message.id}>
             <div className='left-block'>
               <img
-                src='https://ca.slack-edge.com/T0188513NTW-U01867WD8GK-ga631e27835b-72'
+                src='https://lh3.googleusercontent.com/a-/AOh14GjbGVp7R1pYuBHFZu3COLb_NC3WIFS0uPFVG7GqhA'
                 alt='pic'
               />
             </div>
