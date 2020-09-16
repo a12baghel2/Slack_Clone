@@ -16,6 +16,24 @@ code {
     monospace;
 }
 
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  margin: 0px;
+  text-align: center;
+  background: crimson;
+  padding: 40px;
+  font-size: 20px;
+  color: white;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .signin-form {
   align-items: center;
   justify-content: center;
