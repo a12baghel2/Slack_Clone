@@ -10,7 +10,7 @@ const PrivateRoute = ({ component: Component, isLoggedIn, ...others }) => {
       {...others}
       render={(props) => {
         return isLoggedIn ? (
-          <component {...props} />
+          <Component {...props} />
         ) : (
           <Redirect
             to={{
@@ -33,14 +33,19 @@ function App() {
     return <h1>Loading...</h1>
   }
    return (
-      <div>
-        <Switch>
-          <Route exact path='/lognin' component={SignIn} />
-          <Route exact path='/signin' component={SignIn} />
-          <PrivateRoute exact path="/" component={Slack} isLoggedIn = {auth.user ? true : false}/>
-        </Switch>
-      </div>
-    );
+     <div>
+       <Switch>
+         <Route exact path='/login' component={SignIn} />
+         <Route exact path='/signin' component={SignIn} />
+         <PrivateRoute
+           exact
+           path='/'
+           component={Slack}
+           isLoggedIn={auth.user ? true : false}
+         />
+       </Switch>
+     </div>
+   );
 }
 
 export default App;
