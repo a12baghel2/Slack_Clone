@@ -12,7 +12,8 @@ _This is a simple **Slack** Clone. And needs Lots of improvements. You can creat
 ## To start local development server on your machine
 
 ```shell
-    cd 
+    cd Slack_Clone
+    npm i
     npm start
 
 ```
